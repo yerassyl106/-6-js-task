@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //ESEP - 1
+
+      let school = {
+        name: "589 mektep",
+        phone: 877799944455,
+        students: [
+          { name: "bekarys", grade: 60, group: "A", lessons: "english" },
+          { name: "balnur", grade: 80, group: "C", lessons: "math" },
+          { name: "Azamat", grade: 68, group: "A", lessons: "IT" },
+          { name: "serik", grade: 40, group: "B", lessons: "history" },
+          { name: "Aizhan", grade: 70, group: "C", lessons: "kazak tili" },
+          { name: "Yeraly", grade: 65, group: "B", lessons: "Draw" },
+        ],
+      };
+      console.log(school);
+
+      ////
+
+      //ESEP - 2
+
+      let schoolname = prompt("changeSchoolName");
+      let changeSchoolName = () => {};
+
+      ////
+
+      //ESEP - 3
+
+      let schoolnum = prompt("changeSchoolName");
+      let changePhoneNumber = () => {};
+
+      ////
+
+      //ESEP     - 4
+
+      function listStudentNames() {
+        alert(school.students);
+      }
+      alert(listStudentNames);
+
+      ////
+
+      //ESEP - 5
+
+      let addstudent = prompt("changeSchoolName");
+      let addStudent = () => {};
+
+      ////
+
+      //ESEP - 6
+
+      let topatav = prompt("topatavynengiz");
+      let tomendetupaiyz = prompt("kanshapaiyztomendetukerek");
+      let applyDecreaseToTop = () => {};
+
+      ////
+
+      //ESEP - 7
+
+      let menushygaru = prompt(
+        "1. Оқу орталығынын атауын өзгерту \n 2. Телефон нөмірін өзгерту \n  3. Студенттер атауын шығару \n 4. Жаңа студент қосу \n  5. Топқа пайыздық мөлшерде орташа үлгерімін төмендету \n 6. Тоқтат"
+      );
+
+      function menu(menushygaru) {
+        switch (menushygaru) {
+          case 1:
+            console.log(changeSchoolName);
+            break;
+
+          case 2:
+            console.log(changePhoneNumber);
+            break;
+
+          case 3:
+            console.log(listStudentNames);
+            break;
+
+          case 4:
+            console.log(addStudent);
+            break;
+
+          case 5:
+            console.log(applyDecreaseToTop);
+            break;
+
+          case 6:
+            alert("Сау болыңыз!");
+            break;
+
+          default:
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
